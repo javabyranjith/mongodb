@@ -1,4 +1,4 @@
-type ProductQuery {
+type Query{
   products: [Product]
   productById: Product
   productByType: [Product]

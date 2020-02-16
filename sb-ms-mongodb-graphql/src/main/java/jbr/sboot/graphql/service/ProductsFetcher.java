@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.TextCriteria;
+import org.springframework.stereotype.Service;
 
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
@@ -11,6 +12,7 @@ import jbr.sboot.graphql.dao.ProductDao;
 import jbr.sboot.graphql.model.Product;
 import lombok.extern.slf4j.Slf4j;
 
+@Service
 @Slf4j
 public class ProductsFetcher implements DataFetcher<List<Product>> {
 

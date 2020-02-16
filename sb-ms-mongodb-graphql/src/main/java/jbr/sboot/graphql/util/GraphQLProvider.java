@@ -1,4 +1,4 @@
-package jbr.sboot.util;
+package jbr.sboot.graphql.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,6 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Slf4j
 public class GraphQLProvider {
+  
   @Value("classpath:graphql/product.graphql")
   private Resource schemaResource;
 
@@ -57,7 +58,6 @@ public class GraphQLProvider {
             .dataFetcher("productById", productByIdFetcher)
             .dataFetcher("productByType", productsByTypeFetcher))
         .build();
-
   }
 
 }
