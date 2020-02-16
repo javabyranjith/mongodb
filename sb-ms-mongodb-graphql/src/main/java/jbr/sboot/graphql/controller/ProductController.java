@@ -32,6 +32,7 @@ public class ProductController {
     log.info("get products");
     ExecutionResult execute = graphQLProvider.getGraphQL()
         .execute(query);
+    log.info("query------> "+query);
     return new ResponseEntity<>(execute, HttpStatus.OK);
   }
 }

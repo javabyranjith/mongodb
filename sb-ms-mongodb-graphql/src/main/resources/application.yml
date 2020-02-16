@@ -3,3 +3,8 @@ server:
   
 spring:  data:    mongodb:      uri: mongodb://localhost:27017
       database: graphql
+
+graphiql:
+  enabled: true
+  mapping: /graphiql  endpoint: /graphql
+  
